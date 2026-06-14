@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.15.16
+    hooks:
+      # 先にフォーマットを自動適用
+      - id: ruff-format
+
+      # その後にlintチェック
+      - id: ruff-check
