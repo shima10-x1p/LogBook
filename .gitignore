@@ -219,3 +219,8 @@ __marimo__/
 
 # Documentation
 docs/
+
+# Agent Configurations
+.agents
+.github/agents/
+.github/instructions/
