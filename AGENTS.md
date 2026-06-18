@@ -39,6 +39,24 @@ tests/
 Python 3.14 構文と 4 スペースインデントを使います。Ruff は行長 100 文字、`py314`、ルール `E`、`F`、`I`、`B`、`UP` で設定されています。
 
 モジュール、関数、変数、テスト名は明確な snake_case、クラス名は PascalCase にします。公開関数や複雑な内部関数には型ヒントを付けてください。`.github/instructions/python.instructions.md` に従い、Python のモジュール、クラス、関数、メソッドには簡潔な Google Style の日本語 docstring を書きます。
+ソースコードコメントを遠慮せずに書いてよい。
+
+```python
+def sum_numbers(a: int, b: int) -> int:
+    """2つの整数を受け取り、その合計を返す。
+
+    Args:
+        a (int): 1つ目の整数。
+        b (int): 2つ目の整数。
+
+    Returns:
+        int: 2つの整数の合計。
+    """
+    # 合計を計算する
+    result = a + b
+
+    return result
+```
 
 ## テスト方針
 
